@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find You</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Find You</h1>
+    <form class="inputForm" onsubmit="return false;">
+      <input type="text" id="username" placeholder="Search a Github User">
+    </form>
+    <div class="card" id="card" style="display: none;">
+      <img src="avatar.png" alt="User Avatar" class="avatar" id="avatar">
+      <div class="user-info">
+        <h2 id="name">Username</h2>
+        <p><span id="followers">0</span> Followers <span id="following">0</span> Following <span id="repos">0</span> Repos</p>
+        <ul>
+          <li><strong id="followers-count">0</strong> Followers</li>
+          <li><strong id="following-count">0</strong> Following</li>
+          <li><strong id="repos-count">0</strong> Repos</li>
+        </ul>
+        <a href="#" class="repo" id="repo-link">Github Profile</a>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
